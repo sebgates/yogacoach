@@ -1,0 +1,33 @@
+/* Home page styles go under here */
+.hero-home {
+    h1 {
+        font-size: 120px;
+        color: white;
+        max-width: 800px;
+        margin: auto;
+        padding-top: 3rem;
+    }
+        min-height: 400px;
+        background: linear-gradient(135deg, #25237a, #5da0bf, #30c390);
+        background-size: 600% 600%;
+    
+        -webkit-animation: AnimationName 22s ease infinite;
+        -moz-animation: AnimationName 22s ease infinite;
+        animation: AnimationName 22s ease infinite;
+    }
+    
+    @-webkit-keyframes AnimationName {
+        0%{background-position:7% 0%}
+        50%{background-position:94% 100%}
+        100%{background-position:7% 0%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:7% 0%}
+        50%{background-position:94% 100%}
+        100%{background-position:7% 0%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:7% 0%}
+        50%{background-position:94% 100%}
+        100%{background-position:7% 0%}
+    }
