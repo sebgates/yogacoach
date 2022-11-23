@@ -1,4 +1,16 @@
-/* Header styles go under here */ /* Body styles go under here */ /* Footer styles go under here */ /* Home page styles go under here */
+/* Header styles go under here */ /* Body styles go under here */
+.mudra {
+  background: url(mudra.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 40vh;
+  padding-top: 3rem;
+  color: white;
+}
+.mudra h4 {
+  font-size: 2rem;
+}
+
+/* Footer styles go under here */ /* Home page styles go under here */
 .hero-home {
   min-height: 400px;
   background: linear-gradient(135deg, #25237a, #5da0bf, #30c390);
