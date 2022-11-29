@@ -1,1 +1,10 @@
 /* Header styles go under here */
+
+.bg-dark {
+    background-color: $orange-branding!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    text-transform: uppercase;
+}

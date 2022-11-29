@@ -1,4 +1,14 @@
-/* Header styles go under here */ /* Body styles go under here */
+/* Header styles go under here */
+.bg-dark {
+  background-color: #e18404 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Body styles go under here */
 .mudra {
   background: url(mudra.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -10,7 +20,7 @@
   font-size: 2rem;
 }
 
-/* Footer styles go under here */ /* Home page styles go under here */
+/* Home page styles go under here */
 .hero-home {
   min-height: 400px;
   background: linear-gradient(135deg, #25237a, #5da0bf, #30c390);
@@ -47,4 +57,18 @@
   100% {
     background-position: 7% 0%;
   }
+}
+/* Footer styles go under here */
+footer {
+  background-color: #e18404;
+  text-align: center;
+  color: white;
+  padding: 2rem 0rem 2rem 0rem;
+}
+footer i {
+  padding: 0.3rem;
+  font-size: 2rem;
+}
+footer p {
+  padding-top: 0.5rem;
 }/*# sourceMappingURL=mainstyles.css.map */

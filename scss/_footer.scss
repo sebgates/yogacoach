@@ -1,1 +1,14 @@
 /* Footer styles go under here */
+footer {
+    background-color: $orange-branding;
+    text-align: center;
+    color: white;
+    padding: 2rem 0rem 2rem 0rem;
+    i {
+        padding: 0.3rem;
+        font-size: 2rem;
+    }
+    p {
+        padding-top: 0.5rem;
+    }
+}
