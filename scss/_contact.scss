@@ -1,0 +1,32 @@
+/* Contact form styles go under here */
+.contact-form {
+  text-transform: uppercase;
+  color: white;
+  .btn-success {
+    text-transform: uppercase;
+  }
+}
+
+.top-contact {
+  background-color: $branding-blue;
+  border-radius: 5px;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 992px) { 
+    .map {
+        margin-top: 1rem;
+    }
+}
+
+.featured-teachers {
+    background: rgb(9, 9, 121);
+    background: linear-gradient(0deg, rgb(34 111 138) 0%, rgb(47 146 171) 22%, rgb(80 200 225) 100%);
+    padding: 2rem;
+    border-bottom: 5px solid white;
+    h2 {
+        color: white;
+        text-transform: uppercase;
+    }
+}

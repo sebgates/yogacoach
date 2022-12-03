@@ -1,3 +1,19 @@
+/* Font styles go under here */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;0,400;0,600;1,400&family=Roboto+Slab:wght@400;700&display=swap");
+h1, h2, h3, h4 {
+  color: #324189;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+}
+
+.navbar-brand {
+  font-family: "Lobster", cursive;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* Header styles go under here */
 .bg-dark {
   background-color: #e18404 !important;
@@ -8,19 +24,101 @@
   text-transform: uppercase;
 }
 
-/* Body styles go under here */
-.mudra {
-  background: url(mudra.jpg) no-repeat center center fixed;
-  background-size: cover;
-  min-height: 40vh;
-  padding-top: 3rem;
+/* Classes styles go under here */
+.countdown {
+  background: linear-gradient(35deg, #0b6e3b, #44a0a5, #194b7b);
+  background-size: 600% 600%;
+  padding: 3rem;
+  -webkit-animation: AnimationName 19s ease infinite;
+  animation: AnimationName 19s ease infinite;
+  min-height: 300px;
+}
+.countdown h2 {
+  font-size: 4rem;
   color: white;
+  text-transform: uppercase;
+}
+.countdown h3 {
+  font-size: 3rem;
+  color: white;
+}
+.countdown h4 {
+  font-size: 2rem;
+  color: red;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 100% 61%;
+  }
+  100% {
+    background-position: 0% 40%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 100% 61%;
+  }
+  100% {
+    background-position: 0% 40%;
+  }
+}
+.mudra {
+  background: url(background-images/mudra.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 50vh;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
 }
 .mudra h4 {
   font-size: 2rem;
+  color: white;
 }
 
-/* Home page styles go under here */
+.ui-state-default {
+  border: 1px solid #d3d3d3;
+  background: #cee4e9 !important;
+}
+
+/* Contact form styles go under here */
+.contact-form {
+  text-transform: uppercase;
+  color: white;
+}
+.contact-form .btn-success {
+  text-transform: uppercase;
+}
+
+.top-contact {
+  background-color: #324189;
+  border-radius: 5px;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+  .map {
+    margin-top: 1rem;
+  }
+}
+.featured-teachers {
+  background: rgb(9, 9, 121);
+  background: linear-gradient(0deg, rgb(34, 111, 138) 0%, rgb(47, 146, 171) 22%, rgb(80, 200, 225) 100%);
+  padding: 2rem;
+  border-bottom: 5px solid white;
+}
+.featured-teachers h2 {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Body styles go under here */ /* Home page styles go under here */
 .hero-home {
   min-height: 400px;
   background: linear-gradient(135deg, #25237a, #5da0bf, #30c390);
@@ -29,11 +127,30 @@
   animation: AnimationName 22s ease infinite;
 }
 .hero-home h1 {
-  font-size: 120px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 5rem;
   color: white;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
+  padding-top: 9rem;
+}
+
+.home-testimonial {
+  background: url(background-images/yoga-pose.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 40vh;
   padding-top: 3rem;
+}
+.home-testimonial h4 {
+  font-size: 2rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+.home-testimonial h4 i {
+  font-weight: 100;
+  font-size: 1rem;
 }
 
 @-webkit-keyframes AnimationName {

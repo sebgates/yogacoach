@@ -11,6 +11,15 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="scss/mainstyles.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/jqueryui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+      $( function() {
+        $( "#accordion" ).accordion();
+      } );
+      </script>
   </head>
   <body>
     
@@ -43,10 +52,13 @@
         </div>
       </div>
     </nav>
-
-<main class="container">
-  <div class="starter-template">
-    <h1>Classes</h1>
+    <section class="countdown text-center">
+      <h2>Christmas sale 23/12/22</h2>
+      <h3>Sale starts in:</h3>
+      <h4 id="count"></4>
+    </section>
+<main class="container mt-5">
+    <h1 class="text-center">Available Classes</h1>
     <div class="table-responsive mb-4">
       <table class="table table-hover">
         <tr>
@@ -86,13 +98,76 @@
         </tr>
       </table>
     </div>
-  </div>
 </main><!-- /.container -->
 <section class="mudra">
-  <h4 class="container">"I really enjoy and get huge benefit from practicing yoga with the Yoga Coach. His instructions are always clear and professional. The Yoga Coach’s warm, welcoming and caring personality shines through in all her work, in person & online. His amazing variety of classes which are in her video library are second to none."<br>
-
-    <i>Sile, Studio & Online Classes, 2022</i></h4>
+  <h4 class="container">"I love Claire’s classes I find them easy to follow with simple clear instructions. She has a really excellent understanding of people’s different abilities and gives alternative ways of doing the poses. I like how she varies the classes and poses to make the yoga more interesting. I always feels relaxed and happy after one if her classes and can’t recommend her enough!"<br>
+    <i>Mary, Studio & Online Classes, 2020</i></h4>
+</section>
+<section class="faq container">
+  <div class="row">
+    <div class="col">
+      <div id="accordion">
+        <h3><i class="fa-solid fa-chevron-right"></i> What to ware</h3>
+        <div>
+          <p>
+            Your yoga clothing purchases will depend largely on personal preference, as well as the style of yoga you plan to practice. But at a high level, here’s what to wear to yoga (see below for a more detailed discussion of these yoga basics):
+<ul>
+            <li>Breathable, flexible bottoms like yoga pants or shorts</li>
+            <li>A breathable, narrow- or form-fitting top that won’t hang over your head when you’re upside down</li>
+            <li>For women, a sports bra or built-in shelf bra that offers enough support for the type of yoga you’re practicing</li>
+            <li>A comfortable, warm top layer for end-of-class savasana (corpse pose) or after class when you’ve cooled down</li>
+          </ul>
+          </p>
+        </div>
+        <h3><i class="fa-solid fa-chevron-right"></i> What to bring</h3>
+        <div>
+          <p>
+            Below are seven must-haves to bring to your first class to ensure you cover all your bases. Read through each one carefully, as they not all apply to you. Then, pack your gym bag and hit your new (and hopefully soon-to-be favorite) yoga studio. Put your cell phone on silent when you arrive and tuck it away in your bag. This is one journey you won’t be needing it for.
+          </p>
+          <ul>
+            <li>Comfortable yoga attire</li>
+            <li>Water bottle</li>
+            <li>Your own mat</li>
+            <li>Yoga towel</li>
+            <li>Change of clothes</li>
+            <li>Post-yoga snack</li>
+          </ul>
+        </div>
+        <h3><i class="fa-solid fa-chevron-right"></i> What to eat</h3>
+        <div>
+          <p>
+            Before you practice, you want to aim for snacks that are easy to digest and that will help you stay loose while you practice. Of course, what works for your body is specific and personal, which is why we asked multiple experts to give you all the information you need to make a good choices. Here are their recommendations:
+          </p>
+          <ul>
+            <li>Simple carbs</li>
+            <li>Energizing snacks</li>
+            <li>Easy-to-digest foods</li>
+            <li>Eat two hours before you practice.</li>
+            <li>Avoid spicy, fatty, and acidic foods</li>
+            <li>Give yourself time to digest before you practice</li>
+          </ul>
+        </div>
+        <h3><i class="fa-solid fa-chevron-right"></i> How to pay</h3>
+        <div>
+          <p>
+          You can pay for your Yoga Coach classes using a number of methods. Did you know your first class is free of charge? Make use you let the teacher know you are new and they will show you to your yoga mat free of charge. If you are returning customer, these are the ways you can pay.
+          </p>
+          <ul>
+            <li>Revolut</li>
+            <li>PayPal</li>
+            <li>Debit card</li>
+            <li>Cash</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
 </section>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/contdown.js"></script>
   </body>
+ 
 </html>

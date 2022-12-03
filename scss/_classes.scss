@@ -1,0 +1,57 @@
+/* Classes styles go under here */
+
+.countdown {
+    h2 {
+        font-size: 4rem;
+        color: white;
+        text-transform: uppercase;
+      }
+      h3 {
+        font-size: 3rem;
+        color: white;
+      }
+      h4 {
+        font-size: 2rem;
+        color: red;
+      }
+    background: linear-gradient(35deg, #0b6e3b, #44a0a5, #194b7b);
+    background-size: 600% 600%;
+    padding: 3rem;
+    -webkit-animation: AnimationName 19s ease infinite;
+    -moz-animation: AnimationName 19s ease infinite;
+    animation: AnimationName 19s ease infinite;
+    min-height: 300px;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 40%}
+    50%{background-position:100% 61%}
+    100%{background-position:0% 40%}
+}
+
+.mudra {
+  background: url(background-images/mudra.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  min-height: 50vh;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+  h4 {
+      font-size: 2rem;
+      color: white;
+  }
+}
+
+.ui-state-default {
+  border: 1px solid #d3d3d3;
+  background: #cee4e9 !important;
+}

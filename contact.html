@@ -7,11 +7,11 @@
     <meta name="author" content="Sebastian Gates">
     <meta name="generator" content="Hugo 0.80.0">
     <title>Contact Us today</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="mystyle.css" rel="stylesheet">
-    <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+    <link href="scss/mainstyles.css" rel="stylesheet">
   </head>
   <body>
     
@@ -45,33 +45,85 @@
       </div>
     </nav>
 
-<main class="container">
+<section class="container">
   <div class="starter-template text-center">
     <h1>Contact</h1>
-    <form method="POST" name="contactform" action="contact-form-handler.php"> 
-      <p>
-      <label for='name'>Your Name:</label> <br>
-      <input type="text" name="name">
-      </p>
-      <p>
-      <label for='email'>Email Address:</label> <br>
-      <input type="text" name="email"> <br>
-      </p>
-      <p>
-      <label for='message'>Message:</label> <br>
-      <textarea name="message"></textarea>
-      </p>
-      <input type="submit" value="Submit"><br>
-      </form>
-      
-      <script language="JavaScript">
-      var frmvalidator  = new Validator("contactform");
-      frmvalidator.addValidation("name","req","Please provide your name"); 
-      frmvalidator.addValidation("email","req","Please provide your email"); 
-      frmvalidator.addValidation("email","email","Please enter a valid email address"); 
-      </script>
-      
-</main><!-- /.container -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
+    <section class="conatct-callout">
+      <p>Contact us today to find your idea yoga class and connect with a yoga community.</p>
+    </section>
+    </div>
+    <div class="row top-contact">
+      <div class="col-lg">
+        <form method="POST" class="contact-form" name="contactform" action="contact-form-handler.php"> 
+          <div class="form-group">
+          <label for='name'>Your Name:</label> <br>
+          <input type="text" name="name" class="form-control mb-2">
+          </div>
+          <div class="form-group">
+          <label for='email'>Email Address:</label> <br>
+          <input type="text" name="email" class="form-control"> <br>
+        </div>
+          <div class="form-group">
+          <label for='message'>Message:</label> <br>
+          <textarea name="message" class="form-control" rows="6" cols="50"></textarea>
+        </div>
+          <input type="submit" class="btn btn-success mt-3" value="Submit"><br>
+          </form> 
+        </div>   
+      <div class="col-lg map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76221.05019771036!2d-6.330253470122271!3d53.344906297286954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670eaf7fac3c25%3A0xc334d98c660d0575!2syogahub!5e0!3m2!1sen!2sie!4v1669975448707!5m2!1sen!2sie" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div> 
+  </section><!-- /.container -->
+  <section class="featured-teachers">
+    <div class="container">
+    <h2 class="text-center">Featured teachers</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/teacher2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Katie Harrison</h5>
+            <p class="card-text">Hi, I am katie and I love to teach yoga and help people on their spiritual path. I am fully qualified in over five different types of yoga styles and teach every day in Dublin.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Email me: <a href="mailto:katie.harrison@yogacoach.ie">katie.harrison@yogacoach.ie</a></small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/teacher1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cian Renolds</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Email me: <a href="mailto:cain.renolds@yogacoach.ie">cian.renolds@yogacoach.ie</a></small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/teacher3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Susan O'Hale</h5>
+            <p class="card-text">Namaste, I am Susan and I am a </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Email me: <a href="mailto:susan.ohale@yogacoach.ie">susan.ohale@yogacoach.ie</a></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- / 1300px .container -->
+  </section><!-- /.container-fluid -->
+  <footer>
+    <p>copyright©2022 - Al rights reserved</p>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+</footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
