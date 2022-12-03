@@ -11,4 +11,16 @@ footer {
     p {
         padding-top: 0.5rem;
     }
+    a {
+        color: white;
+        &:hover {
+            color: white;
+        }
+    }
 }
+
+.fa-brands:hover {
+    display: inline-block;
+    animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }

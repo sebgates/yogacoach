@@ -8,7 +8,25 @@
     <meta name="generator" content="Hugo 0.80.0">
     <title>Yoga classes and booking</title>
     <!-- Bootstrap core CSS -->
+    <style>
+      #scrollTop {
+  position: fixed;
+  bottom: 8px;
+  right: 6px;
+  height: 22px;
+  width: 65px;
+  background-color: #777;
+  color: #fff;
+  text-align: center;
+  padding: 6px;
+  cursor: pointer;
+}
+    </style>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
     <!-- Custom styles for this template -->
     <link href="scss/mainstyles.css" rel="stylesheet">
     <link rel="stylesheet" href="scss/jqueryui.css">
@@ -36,7 +54,7 @@
           <span class="d-flex">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="about.html">About</a>
+                <a class="nav-link" aria-current="page" href="philosophy.html">Philosophy</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="classes.html">Classes</a>
@@ -53,12 +71,12 @@
       </div>
     </nav>
     <section class="countdown text-center">
-      <h2>Christmas sale 23/12/22</h2>
-      <h3>Sale starts in:</h3>
+      <h2 class="animate__animated animate__fadeInDown">Christmas sale 23/12/22</h2>
+      <h3 class="animate__animated animate__zoomIn">Sale starts in:</h3>
       <h4 id="count"></4>
     </section>
 <main class="container mt-5">
-    <h1 class="text-center">Available Classes</h1>
+    <h1 class="text-center bold-sans-serif">Available Classes</h1>
     <div class="table-responsive mb-4">
       <table class="table table-hover">
         <tr>
@@ -100,12 +118,19 @@
     </div>
 </main><!-- /.container -->
 <section class="mudra">
-  <h4 class="container">"I love Claire’s classes I find them easy to follow with simple clear instructions. She has a really excellent understanding of people’s different abilities and gives alternative ways of doing the poses. I like how she varies the classes and poses to make the yoga more interesting. I always feels relaxed and happy after one if her classes and can’t recommend her enough!"<br>
-    <i>Mary, Studio & Online Classes, 2020</i></h4>
+  <h4 class="container">"I love The Yoga Coach’s classes. I find them easy to follow with simple clear instructions. He has a really excellent understanding of people’s different abilities and gives alternative ways of doing the poses. I like how he varies the classes and poses to make the yoga more interesting. I always feels relaxed and happy after one if his classes and can’t recommend him enough!"<br>
+    <i>Mary, Studio & Online Classes, 2020</i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </h4>
 </section>
-<section class="faq container">
+<section class="faq container mb-5">
+  <h2 class="text-center bold-sans-serif">FAQ & NEWS</h2>
   <div class="row">
-    <div class="col">
+    <div class="col-lg">
       <div id="accordion">
         <h3><i class="fa-solid fa-chevron-right"></i> What to ware</h3>
         <div>
@@ -161,13 +186,148 @@
         </div>
       </div>
     </div>
-    <div class="col">
-      Column
+    <div class="col-lg">
+      <h2>Yoga Poses of the week</h2>
+      <div class="table-responsive">
+        <table class="table">
+          <tr>
+            <th>Pose</th>
+            <th>Time held</th>
+            <th>Benefits</th>
+          </tr>
+          <tr>
+            <td>Cobra pose</td>
+            <td>5 minutes</td>
+            <td>Energy and immune system boost</td>
+          </tr>
+          <tr>
+            <td>Downward faceing Dog</td>
+            <td>3 Minutes</td>
+            <td>Lowers blood pressure</td>
+          </tr>
+          <tr>
+            <td>Warrior lunge</td>
+            <td>7 Minutes</td>
+            <td>Increases flexibility and core strength</td>
+          </tr>
+          <tr>
+            <td>Tree pose</td>
+            <td>10 Minutes</td>
+            <td>Increases concentration levels</td>
+          </tr>
+          <tr>
+            <td>Head stand</td>
+            <td>5 Minutes</td>
+            <td>Reverses the aging process</td>
+          </tr>
+          <tr>
+            <td>Child pose</td>
+            <td>10 Minutes</td>
+            <td>Cultivates a state of relaxation</td>
+          </tr>
+          <tr>
+            <td>Forward bend</td>
+            <td>6 Minutes</td>
+            <td>Stretches the hamstrings</td>
+          </tr>
+          <tr>
+            <td>Plank pose</td>
+            <td>2 Minutes</td>
+            <td>Develops core strength</td>
+          </tr>
+          <tr>
+            <td>Cow pose</td>
+            <td>4 Minutes</td>
+            <td>Energy boost</td>
+          </tr>
+          <tr>
+            <td>Back bend</td>
+            <td>3 Minutes</td>
+            <td>Addresses lower back pain</td>
+          </tr>
+          <tr>
+            <td>Crow pose</td>
+            <td>5 Minutes</td>
+            <td>Awakens the heart chakra</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
 </section>
+<section class="gallery">
+  <div class="container">
+    <h2 class="text-center mb-3">GALLERY</h2>
+    <div class="row">
+      <div class="column">
+        <img src="images/gallery1.jpg" style="width:100%" alt="Yoga class image" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/gallery2.jpg" style="width:100%" alt="Yoga class image" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/gallery3.jpg" style="width:100%" alt="Yoga class image" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/gallery4.jpg" style="width:100%" alt="Yoga class image" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <img src="images/gallery1.jpg" style="width:100%" alt="Yoga class image">
+        </div>
+    
+        <div class="mySlides">
+          <img src="images/gallery2.jpg" style="width:100%" alt="Yoga class image">
+        </div>
+    
+        <div class="mySlides">
+          <img src="images/gallery3.jpg" style="width:100%" alt="Yoga class image">
+        </div>
+        
+        <div class="mySlides">
+          <img src="images/gallery4.jpg" style="width:100%" alt="Yoga class image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="mobile-gallery py-3 px-3">
+  <h1 class="text-center">Gallery</h1>
+<!-- This static gallery only displays on mobile computers -->
+<div class="row">
+  <div class="col-md mb-3">
+    <img src="images/gallery1.jpg" class="img-fluid mobile-gallery" alt="Yoga class image">
+  </div>
+  <div class="col-md mb-3">
+    <img src="images/gallery2.jpg" class="img-fluid mobile-gallery" alt="Yoga class image">
+  </div>
+  <div class="col-md mb-3">
+    <img src="images/gallery3.jpg" class="img-fluid mobile-gallery" alt="Yoga class image">
+  </div>
+  <div class="col-md mb-3">
+    <img src="images/gallery4.jpg" class="img-fluid mobile-gallery" alt="Yoga class image">
+  </div>
+</div>
+</section>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="scripts/contdown.js"></script>
+    <script src="scripts/gallery.js"></script>
+    <script src="scripts/top.js"></script>
+    <footer>
+      <p>copyright©2022 - All rights reserved</p>
+      <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/">
+      <i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.twitter.com/">
+      <i class="fa-brands fa-twitter"></i></a>
+</footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
- 
 </html>
+ 

@@ -1,3 +1,21 @@
 /* Body styles go under here */
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border-radius: 2rem;
+    outline: none;
+    background-color: rgb(20, 49, 134);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: 0px;
+  }
 
+  #myBtn:hover {
+    background-color: #000;
+  }
