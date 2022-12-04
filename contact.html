@@ -7,6 +7,7 @@
     <meta name="author" content="Sebastian Gates">
     <meta name="generator" content="Hugo 0.80.0">
     <title>Contact Us today</title>
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap core CSS -->
     <link
@@ -50,8 +51,16 @@
     </nav>
 
 <section class="container mt-3">
-  <div class="starter-template text-center">
-    <h1>Contact</h1>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="https://www.yogadublin.com/" target="_blank">Dublin Studio</a>
+    <a href="https://yogacorkireland.com/" target="_blank">Cork Studio</a>
+    <a href="https://yogadarsana.ie/" target="_blank">Galway Studio</a>
+    <a href="https://www.yogaquarter.com/" target="_blank">Belfast Studio</a>
+  </div>
+  <div id="main">
+  <div class="text-center">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; More contact options</span>
     <section class="conatct-callout">
       <p>Contact us today to find your idea yoga class and connect with a yoga community.</p>
     </section>
@@ -61,17 +70,17 @@
         <form method="POST" class="contact-form" name="contactform" action="contact-form-handler.php"> 
           <div class="form-group">
           <label for='name'>Your Name:</label> <br>
-          <input type="text" name="name" class="form-control mb-2">
+          <input type="text" name="name" class="form-control mb-2" placeholder="Add your full name" required autofocus>
           </div>
           <div class="form-group">
           <label for='email'>Email Address:</label> <br>
-          <input type="text" name="email" class="form-control"> <br>
+          <input type="text" name="email" class="form-control" placeholder="Make sure it is a vaild email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> <br>
         </div>
           <div class="form-group">
           <label for='message'>Message:</label> <br>
-          <textarea name="message" class="form-control" rows="6" cols="50"></textarea>
+          <textarea name="message" class="form-control" rows="6" cols="50" placeholder="Add your message here" required></textarea>
         </div>
-          <input type="submit" class="btn btn-success mt-3" value="Submit"><br>
+          <input type="submit" class="btn btn-success mt-3" value="Submit"> <input type="reset" class="btn btn-primary mt-3"><br>
           </form> 
         </div>   
       <div class="col-lg map">
@@ -88,7 +97,7 @@
           <img src="images/teacher2.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Katie Harrison</h5>
-            <p class="card-text">Hi, I am katie and I love to teach yoga and help people on their spiritual path. I am fully qualified in over five different types of yoga styles and teach every day in Dublin.</p>
+            <p class="card-text">Hi, I am katie and I love to teach yoga and help people on their spiritual path. I am fully qualified in over five different types of yoga styles and teach every day in our Cork studio.</p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Email me: <a href="mailto:katie.harrison@yogacoach.ie">katie.harrison@yogacoach.ie</a></small>
@@ -100,7 +109,7 @@
           <img src="images/teacher1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Cian Renolds</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">Hare Krishna, I am the head teacher at our Dublin studio. Please contact me if you are a yoga enthusiast looking for teacher training or advanced meditation courses.</p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Email me: <a href="mailto:cain.renolds@yogacoach.ie">cian.renolds@yogacoach.ie</a></small>
@@ -112,7 +121,7 @@
           <img src="images/teacher3.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Susan O'Hale</h5>
-            <p class="card-text">Namaste, I am Susan and I am a </p>
+            <p class="card-text">Namaste, I am Susan and specialise in prenatal yoga and help women recover from child birth. Please contact me if you are look for help through your pregnancy and child birth.</p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Email me: <a href="mailto:susan.ohale@yogacoach.ie">susan.ohale@yogacoach.ie</a></small>
@@ -130,6 +139,8 @@
     <a href="https://www.twitter.com/">
     <i class="fa-brands fa-twitter"></i></a>
 </footer>
+</div><!-- /end slide nav -->
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/slidenav.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
   background-color: $omchanting-blue; 
   a {
     float: left;
-    font-size: 16px;
+  
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -25,10 +25,7 @@
   }
 }
   
-  .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: $omchanting-blue;
-  }
-  
+
   .subnav-content {
     display: none;
     position: absolute;
@@ -48,53 +45,48 @@
     color: black;
   }
 
-  .subnav-content   {
-    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-            animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  .subnav-content  {
+    -webkit-animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: flip-in-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
 /**
  * ----------------------------------------
- * animation puff-in-center
+ * animation flip-in-hor-bottom
  * ----------------------------------------
  */
- @-webkit-keyframes puff-in-center {
+ @-webkit-keyframes flip-in-hor-bottom {
   0% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    -webkit-filter: blur(4px);
-            filter: blur(4px);
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
     opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
     opacity: 1;
   }
 }
-@keyframes puff-in-center {
+@keyframes flip-in-hor-bottom {
   0% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    -webkit-filter: blur(4px);
-            filter: blur(4px);
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
     opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
     opacity: 1;
   }
 }
-
   .subnav:hover .subnav-content {
     display: block;
   }
 
   .links {
-    min-height: 150px;
+    min-height: 300px;
+  }
+
+  .blue {
+  background-color: $omchanting-blue; 
   }

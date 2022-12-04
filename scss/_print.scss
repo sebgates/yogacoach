@@ -1,0 +1,16 @@
+/* Print styles go under here */ 
+@media print {
+    .navbar,
+    footer,
+    .hero-home,
+    .mobile-gallery,
+    .gallery {
+        display: none;
+    }
+
+    .home-testimonial {
+        color: black;
+        font-weight: 400;
+        font-size: 16px;
+    }
+ }
