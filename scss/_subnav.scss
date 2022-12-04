@@ -1,0 +1,100 @@
+/* Sub nav styles go under here */ 
+.navbar {
+  background-color: $omchanting-blue; 
+  a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+} 
+  .subnav {
+    float: left;
+    overflow: hidden;
+    .subnavbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+  }
+}
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: $omchanting-blue;
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: $medom-blue;
+    width: 100%;
+    z-index: 1;
+    a {
+      float: left;
+      color: white;
+      text-decoration: none;
+    }
+  }
+ 
+  .subnav-content a:hover {
+    background-color: $lightom-blue;
+    color: black;
+  }
+
+  .subnav-content   {
+    -webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+            animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  }
+
+/**
+ * ----------------------------------------
+ * animation puff-in-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+  .links {
+    min-height: 150px;
+  }

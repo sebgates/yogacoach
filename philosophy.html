@@ -6,7 +6,12 @@
     <meta name="description" content="">
     <meta name="author" content="Sebastian Gates">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Starter Template · Bootstrap v5.0</title>
+    <title>Philosophy | Yoga coach</title>
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -44,18 +49,131 @@
       </div>
     </nav>
 
-<main class="container">
-  <div class="starter-template text-center">
-    <h1>Philosophy</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-  </div>
+<main class="container mt-3">
+    <h1 class="text-center">Philosophy</h1>
+    <p class="text-center">This month we are reading the Bagavad Gita</p>
+    <div class="card-group mb-5">
+      <div class="card">
+        <img src="images/philosophy1.jpg" class="card-img-top" alt="lotus flower">
+        <div class="card-body">
+          <h5 class="card-title">Bagavad Gita Ch3 17</h5>
+          <p class="card-text">But the person who delights in the Self, who is satisfied with the Self, who rejoices in the Self, for him there is nothing left to achieve.</p>
+          <audio controls class="full-width">
+            <source src="audio/Gita chapter 3 verse 17.ogg" type="audio/ogg">
+            <source src="audio/Gita chapter 3 verse 17.mp3" type="audio/mpeg">
+          Your browser does not support the this audio element.
+          </audio>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><b>Created at:</b> <p id="verse17"></p></small>
+          <script>
+            const a = new Date("November 1, 2022 11:13:00");
+            document.getElementById("verse17").innerHTML = a;
+            </script>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/philosophy2.jpg" class="card-img-top" alt="peaceful scene">
+        <div class="card-body">
+          <h5 class="card-title">Bagavad Gita Ch3 18</h5>
+          <p class="card-text">For such a person there is nothing to gain from renouncing or performing action, nor is he dependent on any other being.</p>
+          <audio controls class="full-width">
+            <source src="audio/Gita chapter 3 verse 18.ogg" type="audio/ogg">
+            <source src="audio/Gita chapter 3 verse 18.mp3" type="audio/mpeg">
+          Your browser does not support the this audio element.
+          </audio>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><b>Created at:</b> <p id="verse18"></p></small>
+          <script>
+            const b = new Date("November 2, 2022 09:45:00");
+            document.getElementById("verse18").innerHTML = b;
+            </script>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/philosophy3.jpg" class="card-img-top" alt="beach meditation">
+        <div class="card-body">
+          <h5 class="card-title">Bagavad Gita Ch3 18</h5>
+          <p class="card-text">Therefore, always perform that work which ought to be done without attachment. For one who acts without attachment attains the Supreme.</p>
+          <audio controls class="full-width">
+            <source src="audio/Gita chapter 4 verse 19.ogg" type="audio/ogg">
+            <source src="audio/Gita chapter 4 verse 19.mp3" type="audio/mpeg">
+          Your browser does not support the this audio element.
+          </audio>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><b>Created at:</b> <p id="verse19"></p></small>
+          <script>
+            const c = new Date("November 3, 2022 18:10:00");
+            document.getElementById("verse19").innerHTML = c;
+            </script>
+        </div>
+      </div>
+    </div>
+<section class="registration-form mb-5">
+  <img src="images/gita.jpg" class="card-img-top mb-3" alt="beach meditation">
+  <h1>Registration Form</h1>
+  <p>Register today to join our thriving online philosophy community</p>
+  <div class="form-group">
+<form name='registration'>
+<label for="username">Name:</label>
+<input type="text" class="form-control mb-2" name="username" id="username" size="50" onBlur="username_validation();" /><span id="name_err"></span>
+<label for="address">Address:</label>
+<input type="text" class="form-control mb-2"" name="address" id="address" size="50" /><span id="add_err"></span>
 
+<div class="row">
+  <div class="col-md">
+    <label for="country">Country:</label>
+<select id="country" class="form-control mb-2" name="country" onBlur="country_validation();">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="IE">Ireland</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+<option value="UK">UK</option>
+<option value="--">My country is not listed</option>
+</select><span id="country_err"></span>
+  </div>
+  <div class="col-md">
+    <label for="zip">ZIP Code:</label>
+    <input type="text" class="form-control mb-2" name="zip" id="zip" onBlur="zip_validation();" /><span id="zip_err"></span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md">
+    <label for="passid">Desired Password:</label>
+    <input type="password" class="form-control" name="passid" id="passid" size="12" onBlur="passwd_validation();"/><span id="passwd_err"></span>
+  </div>
+  <div class="col-md">
+    <label for="email">Email:</label>
+<input type="text" class="form-control" name="email" id="email" size="50" onBlur="email_validation();"/><span id="email_err"></span>
+  </div>
+</div>
+
+<div class="form-check"></div>
+<label>Language:</label>
+<input type="checkbox" class="form-check-label"  name="en" value="en" checked /><span>English</span>
+<input type="checkbox" class="form-check-label"  name="nonen" value="noen" /><span>Non English</span>
+</div><!-- /end form check -->
+<div class="form-group mt-3">
+<label for="message">Your Message:</label>
+<textarea name="message" class="form-control" id="message"></textarea>
+</div><!-- /end form group-->
+<input type="submit" class="btn btn-success mt-3" name="submit" value="Submit" />  <input type="reset" class="btn btn-primary mt-3" name="reset" value="Reset" />
+</form>
+</section>
 </main><!-- /.container -->
 <footer>
   <p>copyright©2022 - All rights reserved</p>
-  <i class="fa-brands fa-facebook"></i>
-  <i class="fa-brands fa-instagram"></i>
-  <i class="fa-brands fa-twitter"></i>
+  <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+  <a href="https://www.instagram.com/">
+  <i class="fa-brands fa-instagram"></i></a>
+  <a href="https://www.twitter.com/">
+  <i class="fa-brands fa-twitter"></i></a>
 </footer>
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
