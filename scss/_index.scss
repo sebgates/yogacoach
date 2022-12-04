@@ -18,11 +18,34 @@
         animation: AnimationName 22s ease infinite;
     }
 
+    @media (max-width: 767.98px) {
+        .hero-home {
+            h1 {
+                font-size: 3rem;
+                padding-top: 3rem;
+        
+            }
+            min-height: 150px;
+     }
+    }
+
+    @media (max-width: 575.98px) {
+        .hero-home {
+            h1 {
+                font-size: 1.7rem;
+                padding-top: 2rem;
+        
+            }
+            min-height: 100px;
+     }
+    }
+
     .home-testimonial {
         background: url(background-images/yoga-pose.jpg) no-repeat center center fixed; 
         background-size: cover;
-        min-height: 40vh;
         padding-top: 3rem;
+        padding-bottom: 3rem;
+        border-bottom: 5px solid white;
         h4 {
             font-size: 2rem;
             color: white;
@@ -33,6 +56,30 @@
                 font-size: 1rem;
             }
         }
+    }
+
+    @media (max-width: 767.98px) {
+        .home-testimonial {
+            padding-bottom: 3rem;
+            h4 {
+                font-size: 1.6rem;
+                i {
+                    font-size: 0.7rem;
+                }
+            }
+
+     }
+    }
+
+    @media (max-width: 575.98px) {
+        .home-testimonial {
+            h4 {
+                font-size: 1.2rem;
+                i {
+                    font-size: 0.5rem;
+                }
+            }
+     }
     }
     
     
@@ -51,5 +98,24 @@
         50%{background-position:94% 100%}
         100%{background-position:7% 0%}
     }
+
+    #quote, #press {
+        padding: 1rem;
+        color: white;
+        text-align: center;
+        background: linear-gradient(135deg, #25237a, #5da0bf, #30c390);
+        background-size: 600% 600%;
+        -webkit-animation: AnimationName 22s ease infinite;
+        -moz-animation: AnimationName 22s ease infinite;
+        animation: AnimationName 22s ease infinite;
+        
+      }
+      
+      #quote {
+        border-top: solid 1px $omchanting-blue;
+        border-bottom: solid 5px white;
+        padding: 50px;
+        display: none;
+      }
 
     
