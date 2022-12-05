@@ -34,9 +34,25 @@
 .map {
   display: inline-block;
   margin: 0 0.5rem;
+  animation: fadeIn; 
+  animation-duration: 1.5s; 
+}
+@media (max-width: 767.98px) { 
+  .map {
+    margin: 0rem;
+    margin-top: 1rem;
+  }
 
-  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1.5s; /* don't forget to set a duration! */
+ }
+
+.map {
+  display: inline-block;
+  margin: 0rem;
+  margin-top: 1rem;
+  -webkit-animation: fadeIn;
+  animation: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
 /* Slide in navigation */

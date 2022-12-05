@@ -87,6 +87,12 @@
     min-height: 300px;
   }
 
+  @media (max-width: 767.98px) {
+    .links {
+      min-height: 400px;
+    }
+   }
+
   .blue {
   background-color: $omchanting-blue; 
   }

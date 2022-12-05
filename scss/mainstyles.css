@@ -247,9 +247,25 @@ img.hover-shadow {
   display: inline-block;
   margin: 0 0.5rem;
   -webkit-animation: fadeIn;
-          animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+          animation: fadeIn;
   -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s; /* don't forget to set a duration! */
+          animation-duration: 1.5s;
+}
+
+@media (max-width: 767.98px) {
+  .map {
+    margin: 0rem;
+    margin-top: 1rem;
+  }
+}
+.map {
+  display: inline-block;
+  margin: 0rem;
+  margin-top: 1rem;
+  -webkit-animation: fadeIn;
+  animation: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
 /* Slide in navigation */
@@ -441,6 +457,19 @@ tbody {
   margin-left: -1.5rem;
 }
 
+#scrollTop {
+  position: fixed;
+  bottom: 8px;
+  right: 6px;
+  height: 22px;
+  width: 65px;
+  background-color: #777;
+  color: #fff;
+  text-align: center;
+  padding: 6px;
+  cursor: pointer;
+}
+
 /* Sub nav styles go under here */
 .navbar {
   background-color: #1e90a4;
@@ -525,6 +554,11 @@ tbody {
   min-height: 300px;
 }
 
+@media (max-width: 767.98px) {
+  .links {
+    min-height: 400px;
+  }
+}
 .blue {
   background-color: #1e90a4;
 }
@@ -676,7 +710,8 @@ footer a:hover {
 footer,
 .hero-home,
 .mobile-gallery,
-.gallery {
+.gallery,
+.more-contact {
     display: none;
   }
   .home-testimonial {
