@@ -135,37 +135,37 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     <form name='registration' action="message.html" method="post" onsubmit="return writeLocalStorage()">
       <div class="form-group">
         <label for="username">User name: <span class="red">*</span></label>
-        <input class="form-control" placeholder="No spaces please" type="text" name="username" id="username" size="50" onBlur="username_validation();" /><span id="name_err"></span>
+        <input class="form-control mb-2" placeholder="No spaces please" type="text" name="username" id="username" size="50" onBlur="username_validation();" /><span id="name_err"></span>
         </div><!-- /end form group-->
         <div class="row">
           <div class="col-md">
             <div class="form-group">
               <label for="userid">User id: <span class="red">*</span></label>
-             <input class="form-control" placeholder="No spaces please" type="text" name="userid" id="userid" onBlur="userid_validation();"/><span id="uid_err"></span>
+             <input class="form-control mb-2" placeholder="No spaces please" type="text" name="userid" id="userid" onBlur="userid_validation();"/><span id="uid_err"></span>
              </div><!-- /end form group-->
           </div>
           <div class="col-md">
             <div class="form-group">
               <label for="email">Email: <span class="red">*</span></label>
-              <input class="form-control" type="text" name="email" id="email" size="50" onBlur="email_validation();"/><span id="email_err"></span>
+              <input class="form-control mb-2" type="text" name="email" id="email" size="50" onBlur="email_validation();"/><span id="email_err"></span>
             </div><!-- /end form group-->
           </div>
         </div>
      
 <div class="form-group">
  <label for="passid">Password: <span class="red">*</span></label>
- <input class="form-control" type="password" name="passid" id="passid" size="12" onBlur="passwd_validation();"/><span id="passwd_err"></span>
+ <input class="form-control mb-2" type="password" name="passid" id="passid" size="12" onBlur="passwd_validation();"/><span id="passwd_err"></span>
 </div><!-- /end form group-->
 <div class="form-group">
 <label for="address">Address: <span class="red">*</span></label>
-<input class="form-control" type="text" name="address" id="address" size="50" /><span id="add_err"></span>
+<input class="form-control mb-2" type="text" name="address" id="address" size="50" /><span id="add_err"></span>
 </div><!-- /end form group-->
 
 <div class="row">
   <div class="col-md">
     <div class="form-group">
       <label for="country">Country: <span class="red">*</span></label>
-      <select class="form-control" id="country" name="country" onBlur="country_validation();" required>
+      <select class="form-control mb-2" id="country" name="country" onBlur="country_validation();" required>
             <option selected="" value="Default">(Please select a country)</option>
             <option value="--">none</option>
             <option value="AF">Australia</option>
@@ -180,7 +180,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   <div class="col-md">
     <div class="form-group">
     <label for="zip">ZIP/POST Code: <span class="red">*</span></label>
-            <input required minlength="6" maxlength="10" class="form-control" type="text" name="zip" id="zip">
+            <input required minlength="6" maxlength="10" class="form-control mb-2" type="text" name="zip" id="zip">
           </div><!-- /end form group-->
   </div>
 </div>
