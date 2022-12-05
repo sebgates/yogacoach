@@ -129,55 +129,74 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   <h1>Registration Form</h1>
   <p>Register today to join our thriving online philosophy community</p>
   <div class="form-group">
-<form name='registration'>
-<label for="username">Name:</label>
-<input type="text" class="form-control mb-2" name="username" id="username" size="50" onBlur="username_validation();" /><span id="name_err"></span>
-<label for="address">Address:</label>
-<input type="text" class="form-control mb-2"" name="address" id="address" size="50" /><span id="add_err"></span>
-
-<div class="row">
-  <div class="col-md">
-    <label for="country">Country:</label>
-<select id="country" class="form-control mb-2" name="country" onBlur="country_validation();">
-<option selected="" value="Default">(Please select a country)</option>
-<option value="AF">Australia</option>
-<option value="AL">Canada</option>
-<option value="DZ">India</option>
-<option value="IE">Ireland</option>
-<option value="AS">Russia</option>
-<option value="AD">USA</option>
-<option value="UK">UK</option>
-<option value="--">My country is not listed</option>
-</select><span id="country_err"></span>
-  </div>
-  <div class="col-md">
-    <label for="zip">ZIP Code:</label>
-    <input type="text" class="form-control mb-2" name="zip" id="zip" onBlur="zip_validation();" /><span id="zip_err"></span>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md">
-    <label for="passid">Desired Password:</label>
-    <input type="password" class="form-control" name="passid" id="passid" size="12" onBlur="passwd_validation();"/><span id="passwd_err"></span>
-  </div>
-  <div class="col-md">
-    <label for="email">Email:</label>
-<input type="text" class="form-control" name="email" id="email" size="50" onBlur="email_validation();"/><span id="email_err"></span>
-  </div>
-</div>
-
-<div class="form-check"></div>
-<label>Language:</label>
-<input type="checkbox" class="form-check-label"  name="en" value="en" checked /><span>English</span>
-<input type="checkbox" class="form-check-label"  name="nonen" value="noen" /><span>Non English</span>
-</div><!-- /end form check -->
-<div class="form-group mt-3">
-<label for="message">Your Message:</label>
-<textarea name="message" class="form-control" id="message"></textarea>
+    <form name='registration' action="message.html" method="post" onsubmit="return writeLocalStorage()">
+      <div class="form-group">
+        <label for="username">User name: <span class="red">*</span></label>
+        <input class="form-control" placeholder="No spaces please" type="text" name="username" id="username" size="50" onBlur="username_validation();" /><span id="name_err"></span>
+        </div><!-- /end form group-->
+        <div class="row">
+          <div class="col-md">
+            <div class="form-group">
+              <label for="userid">User id: <span class="red">*</span></label>
+             <input class="form-control" placeholder="No spaces please" type="text" name="userid" id="userid" onBlur="userid_validation();"/><span id="uid_err"></span>
+             </div><!-- /end form group-->
+          </div>
+          <div class="col-md">
+            <div class="form-group">
+              <label for="email">Email: <span class="red">*</span></label>
+              <input class="form-control" type="text" name="email" id="email" size="50" onBlur="email_validation();"/><span id="email_err"></span>
+            </div><!-- /end form group-->
+          </div>
+        </div>
+     
+<div class="form-group">
+ <label for="passid">Password: <span class="red">*</span></label>
+ <input class="form-control" type="password" name="passid" id="passid" size="12" onBlur="passwd_validation();"/><span id="passwd_err"></span>
 </div><!-- /end form group-->
-<input type="submit" class="btn btn-success mt-3" name="submit" value="Submit" />  <input type="reset" class="btn btn-primary mt-3" name="reset" value="Reset" />
-</form>
+<div class="form-group">
+<label for="address">Address: <span class="red">*</span></label>
+<input class="form-control" type="text" name="address" id="address" size="50" /><span id="add_err"></span>
+</div><!-- /end form group-->
+
+<div class="row">
+  <div class="col-md">
+    <div class="form-group">
+      <label for="country">Country: <span class="red">*</span></label>
+      <select class="form-control" id="country" name="country" onBlur="country_validation();" required>
+            <option selected="" value="Default">(Please select a country)</option>
+            <option value="--">none</option>
+            <option value="AF">Australia</option>
+            <option value="AL">Canada</option>
+            <option value="DZ">India</option>
+            <option value="AS">Russia</option>
+            <option value="AD">USA</option>
+            </select><span id="country_err"></span>
+          </div><!-- /end form group-->
+           
+  </div>
+  <div class="col-md">
+    <div class="form-group">
+    <label for="zip">ZIP/POST Code: <span class="red">*</span></label>
+            <input required minlength="6" maxlength="10" class="form-control" type="text" name="zip" id="zip">
+          </div><!-- /end form group-->
+  </div>
+</div>
+
+    <div class="form-group mt-3">
+      <label id="gender">Gender:</label>
+      <input type="radio" name="msex" id="msex" value="Male" onBlur="gender_validation();" /><span>Male</span>
+      <input class="form-check-label"  type="radio" name="fsex" id="fsex" value="Female" /><span>Female</span><span id="gender_err"></span>
+    </div><!-- /end form group-->
+    <div class="form-group mt-3">
+      <label>Language:</label>
+      <input class="form-check-label" type="checkbox" name="en" value="en" checked /><span>English</span>
+      <input type="checkbox" name="nonen" value="noen" /><span>Non English</span>
+    </div><!-- /end form group-->
+    <div class="form-group mt-3">
+      <label for="message">Message:</label>
+      <textarea placeholder="Why do you want to join our community?" class="form-control"name="message" id="message" rows="4" cols="50"></textarea>
+      <input type="submit" class="btn btn-success mt-3" name="submit" value="Submit" />  <input type="reset" class="btn btn-primary mt-3" name="reset" value="Reset" />
+      </form>
 </section><!-- /.container -->
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
 <footer>
@@ -190,5 +209,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 </footer>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="scripts/top.js"></script>
+<script src="scripts/validation.js"></script>
+<script src="scripts/storage.js"></script>
 </body>
 </html>

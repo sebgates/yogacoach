@@ -433,6 +433,14 @@ tbody {
     font-size: 0.5rem;
   }
 }
+.red {
+  color: red;
+}
+
+.reduce-left-margin {
+  margin-left: -1.5rem;
+}
+
 /* Sub nav styles go under here */
 .navbar {
   background-color: #1e90a4;
