@@ -671,6 +671,10 @@ tbody {
   .home-testimonial h4 i {
     font-size: 0.5rem;
   }
+  h5 {
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+  }
 }
 @-webkit-keyframes AnimationName {
   0% {
