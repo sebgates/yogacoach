@@ -72,6 +72,30 @@ tbody {
   }
 }
 
+@media (max-width: 767.98px) {
+  .techniques-testimonial {
+      padding-bottom: 3rem;
+      h4 {
+          font-size: 1.6rem;
+          i {
+              font-size: 0.7rem;
+          }
+      }
+
+}
+}
+
+@media (max-width: 575.98px) {
+  .techniques-testimonial {
+      h4 {
+          font-size: 1.2rem;
+          i {
+              font-size: 0.5rem;
+          }
+      }
+}
+}
+
 .philosophy-testimonial {
   background: url(background-images/lunge.jpg) no-repeat center center fixed; 
   background-size: cover;
@@ -134,3 +158,39 @@ tbody {
   padding: 6px;
   cursor: pointer;
 }
+
+.scale-in  {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
