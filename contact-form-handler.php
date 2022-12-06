@@ -4,6 +4,8 @@ $errors = '';
 $myemail = 'sebastian.gates@dkit.ie';// <-----Put your DkIT email address here.
 if(empty($_POST['name'])  ||
    empty($_POST['email']) ||
+   empty($_POST['phone']) ||
+   empty($_POST['dob']) ||
    empty($_POST['message']))
 {
     $errors .= "\n Error: all fields are required";
@@ -17,6 +19,8 @@ $headers .= 'From: '.$myemail."\r\n".
 
 $name = $_POST['name'];
 $email_address = $_POST['email'];
+$phone = $_POST['phone'];
+$dob = $_POST['dob'];
 $message = $_POST['message'];
 
 if (!preg_match(
@@ -31,7 +35,7 @@ if( empty($errors))
         $to = $myemail;
         $email_subject = "Contact form submission: $name";
         $email_body = "You have received a new message. ".
-        " Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message";
+        " Here are the details:\n Name: $name \n Email: $email_address \n Phone: $phone \n DOB: $dob \n Message \n $message";
 
         mail($to,$email_subject,$email_body,$headers);
         //redirect to the 'thank you' page

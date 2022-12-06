@@ -46,7 +46,7 @@ function userid_validation(){
     var passid_length = passid_value.length;
     if(passid_length<8 || passid_length>12)
     {
-    document.getElementById('passwd_err').innerHTML = 'Password must be at least 8 chracters & 12 long';
+    document.getElementById('passwd_err').innerHTML = 'Password must be at least 8 chracters & no longer than 12';
     passid_name.focus();
     document.getElementById('passwd_err').style.color = "#FF0000";
     }
