@@ -3,7 +3,7 @@ A website for Hdip in computing
 ## Frameworks used
 Bootstrap 5
 ## Technologies
-SCSS for styling
-Animate CSS library
-jQuery
-jQuery UI
+1. SCSS for styling
+2. Animate CSS library
+3. jQuery
+4. jQuery UI
