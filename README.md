@@ -10,7 +10,7 @@ Bootstrap 5 - Mobile first framework for modern web design
 
 ## References
 Code snippets were used and tweaked from the following resources
-[title](https://codepen.io/Coding_Journey/pen/BEMgbX)
+[Typing effect](https://codepen.io/Coding_Journey/pen/BEMgbX)
 [title](https://www.w3schools.com/howto/howto_js_sidenav.asp)
 [title](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top)
 [title](https://www.w3schools.com/howto/howto_js_lightbox.asp)
